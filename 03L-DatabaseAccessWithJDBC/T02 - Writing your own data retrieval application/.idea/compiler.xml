@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="03S - Database Access with JDBC" />
+        <module name="T02 - Writing your own data retrieval application" />
       </profile>
     </annotationProcessing>
   </component>

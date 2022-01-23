@@ -6,6 +6,7 @@ import java.util.Properties;
 
 public class Main {
     public static void main(String[] args) throws IOException, SQLException {
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         Connection connection = getConnection(reader);
@@ -13,7 +14,7 @@ public class Main {
         PreparedStatement stmt = connection.prepareStatement
                 ("select * from employees where salary > ?");
 
-        System.out.println("Salary:");
+        System.out.print("Salary: ");
         String salary = reader.readLine();
         stmt.setDouble(1, Double.parseDouble(salary));
 
@@ -27,7 +28,7 @@ public class Main {
     private static Connection getConnection(BufferedReader reader) throws SQLException, IOException {
 
         System.out.print("DB User (default:root):");
-        String user = reader.readLine();
+        String user = reader.readLine().trim();
         user = user.equals("") ? "root" : user;
 
         System.out.print("Password (default:empty):");
