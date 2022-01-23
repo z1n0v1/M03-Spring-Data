@@ -4,3 +4,4 @@
 *.pptx
 **/out/
 **/lib/
+**/target/
