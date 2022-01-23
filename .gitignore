@@ -1,0 +1,6 @@
+*.pdf
+*.docx
+*.ppt
+*.pptx
+**/out/
+**/lib/
