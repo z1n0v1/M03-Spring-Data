@@ -11,9 +11,9 @@ public class Main {
 
         Statement statement = connection.createStatement();
         statement.execute(
-                "SELECT v.name, count(DISTINCT mv.minion_id) as 'count' " +
+                "SELECT v.name, COUNT(DISTINCT mv.minion_id) AS 'count' " +
                         "    FROM villains AS v " +
-                        "    RIGHT JOIN minions_villains mv on v.id = mv.villain_id " +
+                        "    RIGHT JOIN minions_villains mv ON v.id = mv.villain_id " +
                         "    GROUP BY v.name " +
                         "    HAVING `count` > 15" +
                         "    ORDER BY `count` DESC"
