@@ -21,7 +21,7 @@ public class Villain {
 
         ResultSet set = statement.getResultSet();
         if (!set.next())
-            throw new IllegalArgumentException("Invalid villain id.");
+            throw new IllegalArgumentException("No villain with ID " + this.id + " exists in the database.");
         this.name = set.getString("name");
 
         minions = new ArrayList<>();

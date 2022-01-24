@@ -12,9 +12,17 @@ public class Main {
 
         System.out.print("Villain id: ");
         int id = Integer.parseInt(reader.readLine());
-        Villain villain = new Villain(id, connection);
 
-        System.out.println(villain);
+        try {
+            Villain villain = new Villain(id, connection);
+
+            System.out.println(villain);
+
+        } catch (IllegalArgumentException exception) {
+            System.out.println(exception.getMessage());
+        }
+
+
     }
 
     private static Connection getConnection(BufferedReader reader) throws IOException, SQLException {
