@@ -5,30 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd362b1f-4116-45ce-a2fb-219390c5ef71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../T02 - Writing your own data retrieval application/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02 - Writing your own data retrieval application/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02 - Writing your own data retrieval application/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02 - Writing your own data retrieval application/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02 - Writing your own data retrieval application/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02 - Writing your own data retrieval application/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02 - Writing your own data retrieval application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02 - Writing your own data retrieval application/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/03L-DatabaseAccessWithJDBC.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/mysql_connector_java.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../db/diablo_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../db/soft_uni_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/Main.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/src/main/java/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/src/main/java/Minion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04E - Exercise Database Access with JDBC/T04 - Add Minion/src/main/java/Villain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +82,7 @@
       <workItem from="1642958664758" duration="477000" />
       <workItem from="1642959200615" duration="181000" />
       <workItem from="1642959513145" duration="3276000" />
+      <workItem from="1643004044996" duration="14000" />
     </task>
     <servers />
   </component>
