@@ -37,6 +37,25 @@ public static EntityManager *create*(
   Class<?> mainClass
 )
 ```
+Here is an example of the way one should anotate their classes for them to be processed by the framework:
+```java
+@Entity(tableName = simple_classes)
+class SimpleClass {
+
+  @Id
+    private long id;
+  
+  @Column(name = "street", columnDefinition = "VARCHAR(255)")
+    private String street;
+  
+  @Column(name = "date", columnDefinition = "DATE")
+    private LocalDate date;
+
+  @Column(name = "number", columnDefinition = "INT")
+    private int number;
+```
+
+
 
 I've written my own ORM implementation as I was not satisfied by the skeletons provided as part of SoftUni's lecture and workshop you can find them at */src/main/java/archived/* subfolder.
 
