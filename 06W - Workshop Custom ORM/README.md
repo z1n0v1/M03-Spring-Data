@@ -53,6 +53,7 @@ class SimpleClass {
 
   @Column(name = "number", columnDefinition = "INT")
     private int number;
+}
 ```
 
 
