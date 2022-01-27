@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entities.UsersEntity">
+        <table name="users" schema="users_test" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="username">
+                <column name="username" length="40"/>
+            </basic>
+            <basic name="password">
+                <column name="password" length="40"/>
+            </basic>
+            <basic name="age">
+                <column name="age" precision="-1"/>
+            </basic>
+            <basic name="registration">
+                <column name="registration" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
