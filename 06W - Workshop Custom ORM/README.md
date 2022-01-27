@@ -25,7 +25,7 @@ The supported operations are defined in [**EntityManager**](https://github.com/z
  <T> boolean delete(T entity)
 ```
 Initialization of the framework happens using
-*EntityManagerFactory*'s **create** method:
+*EntityManagerFactory*'s [**create**](https://github.com/z1n0v1/M03-Spring-Data/blob/2d556b28780181e706a56a50a544cf55d5eb9803/06W%20-%20Workshop%20Custom%20ORM/src/main/java/miniOrm/core/EntityManagerFactory.java#L24) method:
 ```java
 public static EntityManager *create*(
   String dbType,
