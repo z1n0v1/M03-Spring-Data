@@ -11,7 +11,7 @@
   - **Date**
   - **String**
   
-You can add more data types by adding them to *setEntityColumns* method in 
+You can add more data types by adding them to [*setEntityColumns*](https://github.com/z1n0v1/M03-Spring-Data/blob/b05351906036692860489aa628a6cd9aee004e77/06W%20-%20Workshop%20Custom%20ORM/src/main/java/miniOrm/core/EntityManagerImpl.java#L50) method in 
 *EntityManagerImpl* class.
 
 The supported operations are defined in [**EntityManager**](https://github.com/z1n0v1/M03-Spring-Data/blob/main/06W%20-%20Workshop%20Custom%20ORM/src/main/java/miniOrm/core/EntityManager.java) interface :
