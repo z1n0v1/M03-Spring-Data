@@ -14,7 +14,7 @@
 You can add more data types by adding them to *setEntityColumns* method in 
 *EntityManagerImpl* class.
 
-The supported operations are defined in **EntityManager** interface :
+The supported operations are defined in [**EntityManager**](https://github.com/z1n0v1/M03-Spring-Data/blob/main/06W%20-%20Workshop%20Custom%20ORM/src/main/java/miniOrm/core/EntityManager.java) interface :
 ```java
  <T> T findById(long id, Class<T> tClass)
  <T> T finddst(Class<T> tClass)
