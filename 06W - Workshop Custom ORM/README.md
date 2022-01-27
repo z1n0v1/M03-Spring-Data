@@ -18,7 +18,7 @@ The supported operations are defined in [**EntityManager**](https://github.com/z
 ```java
  <T> T findById(long id, Class<T> tClass)
  <T> T finddst(Class<T> tClass)
- <T> T finFirstFir(Class<T> tClass, String where)
+ <T> T finFirst(Class<T> tClass, String where)
  <T> Iterable<T> find(Class<T> tClass)
  <T> Iterable<T> find(Class<T> tClass, String where)
  <T> boolean persist(T entity)
