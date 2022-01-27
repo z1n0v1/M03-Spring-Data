@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS users_test;
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(40) NOT NULL,
+    password VARCHAR(40) NOT NULL,
+    age INT NOT NULL,
+    registration DATE NOT NULL
+);
