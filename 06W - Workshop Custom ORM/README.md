@@ -28,13 +28,13 @@ Initialization of the framework happens using
 *EntityManagerFactory*'s **create** method:
 ```java
 public static EntityManager *create*(
-  String *dbType*,
-  String *host*,
-  int *port*,
-  String *user*,
-  String *pass*,
-  String *dbName*,
-  Class<?> *mainClass*
+  String dbType,
+  String host,
+  int port,
+  String user,
+  String pass,
+  String dbName,
+  Class<?> mainClass
 )
 ```
 
