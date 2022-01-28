@@ -1,7 +1,4 @@
-import exercise.T02ChangeCasing;
-import exercise.T03ContainsEmployee;
-import exercise.T04EmployeesWithSalaryOver;
-import exercise.T05EmployeesFromDepartment;
+import exercise.*;
 
 import javax.persistence.EntityManager;
 import java.io.BufferedReader;
@@ -25,6 +22,7 @@ public class Engine implements Runnable {
             System.out.println(" 3) Contains Employee");
             System.out.println(" 4) Employees with Salary Over 50 000");
             System.out.println(" 5) Employees from Department");
+            System.out.println(" 6) Adding a New Address and Updating Employee");
 
             System.out.print("Exercise number: ");
             int exerciseNumber = Integer.parseInt(reader.readLine());
@@ -52,6 +50,12 @@ public class Engine implements Runnable {
                     T05EmployeesFromDepartment t05EmployeesFromDepartment =
                             new T05EmployeesFromDepartment(entityManager);
                     t05EmployeesFromDepartment.run();
+                    break;
+                }
+                case 6: {
+                    T06NewAddressUpdatingEmployee t06NewAddressUpdatingEmployee =
+                            new T06NewAddressUpdatingEmployee(entityManager, reader);
+                    t06NewAddressUpdatingEmployee.run();
                     break;
                 }
             }
