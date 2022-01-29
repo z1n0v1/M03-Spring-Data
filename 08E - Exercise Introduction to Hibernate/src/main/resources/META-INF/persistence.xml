@@ -14,8 +14,10 @@
             <property name="hibernate.connection.username" value="softuni"/>
             <property name="hibernate.connection.password" value=""/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+ <!--
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
+ -->
         </properties>
     </persistence-unit>
 </persistence>
