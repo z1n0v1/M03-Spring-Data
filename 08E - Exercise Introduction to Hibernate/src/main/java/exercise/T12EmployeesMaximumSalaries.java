@@ -1,5 +1,8 @@
 package exercise;
 
+import entities.Department;
+import entities.Employee;
+
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
 import java.util.List;
@@ -15,6 +18,8 @@ public class T12EmployeesMaximumSalaries implements Runnable {
     @SuppressWarnings("unchecked")
     public void run() {
 
+        // Using native query
+
         List<Object[]> rows = entityManager.createNativeQuery(
                 "SELECT MAX(e.salary) AS 'max_salary', d.name\n" +
                         "FROM employees e\n" +
@@ -24,6 +29,22 @@ public class T12EmployeesMaximumSalaries implements Runnable {
         rows.forEach(row -> {
             System.out.printf("%s %s%n", row[1], row[0]);
         });
+
+
+        /*  Using java code
+
+        entityManager.getTransaction().begin();
+        entityManager.createQuery("SELECT d FROM Department d", Department.class)
+                .getResultStream().forEach(department -> {
+                    BigDecimal maxSalary = department.getEmployees().stream().map(Employee::getSalary)
+                            .max(BigDecimal::compareTo).orElse(null);
+                    if (maxSalary != null && (maxSalary.compareTo(BigDecimal.valueOf(30000)) == -1 || // Less than 30000
+                    maxSalary.compareTo(BigDecimal.valueOf(70000)) == 1)) { // more than 70000
+                        System.out.printf("%s %s%n", department.getName(), maxSalary);
+                    }
+                });
+        entityManager.getTransaction().commit();
+        */
 
     }
 }
