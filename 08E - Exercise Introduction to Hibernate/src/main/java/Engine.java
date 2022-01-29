@@ -25,6 +25,7 @@ public class Engine implements Runnable {
             System.out.println(" 6) Adding a New Address and Updating Employee");
             System.out.println(" 7) Addresses with Employee Count");
             System.out.println(" 8) Get Employee with Project");
+            System.out.println(" 9) Find Latest 10 Projects");
 
             System.out.print("Exercise number: ");
             int exerciseNumber = Integer.parseInt(reader.readLine());
@@ -71,6 +72,11 @@ public class Engine implements Runnable {
                             new T08GetEmployeeWithProject(entityManager, reader);
                     t08GetEmployeeWithProject.run();
                     break;
+                }
+                case 9: {
+                    T09FindLatestProjects t09FindLatestProjects =
+                            new T09FindLatestProjects(entityManager);
+                    t09FindLatestProjects.run();
                 }
             }
 
