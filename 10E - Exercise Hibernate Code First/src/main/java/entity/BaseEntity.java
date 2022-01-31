@@ -3,7 +3,7 @@ package entity;
 import javax.persistence.*;
 
 @MappedSuperclass
-@Inheritance(strategy = InheritanceType.JOINED)
+//@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class BaseEntity {
 
     private Long id;
