@@ -1,4 +1,6 @@
-package entity;
+package entity.T01GringottsDatabase;
+
+import entity.BaseEntity;
 
 import javax.persistence.*;
 import java.time.LocalDate;
