@@ -4,8 +4,7 @@ import javax.persistence.Persistence;
 public class Main {
     public static void main(String[] args) {
         EntityManager entityManager = Persistence.createEntityManagerFactory(
-    "e10_code_first").createEntityManager();
-
+                "e10_code_first").createEntityManager();
 
     }
 }
