@@ -1,11 +1,9 @@
 package entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 
 @MappedSuperclass
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class BaseEntity {
 
     private Long id;
