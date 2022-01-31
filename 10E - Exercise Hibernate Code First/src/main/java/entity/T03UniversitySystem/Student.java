@@ -24,11 +24,11 @@ public class Student extends Person {
     }
 
     @ManyToMany(mappedBy = "students")
-    public Set<Course> getAttendance() {
+    public Set<Course> getCourses() {
         return courses;
     }
 
-    public void setAttendance(Set<Course> courses) {
+    public void setCourses(Set<Course> courses) {
         this.courses = courses;
     }
 }
