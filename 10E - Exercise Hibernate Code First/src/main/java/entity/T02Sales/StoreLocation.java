@@ -1,4 +1,4 @@
-package entity.T02SalesDatabase;
+package entity.T02Sales;
 
 import entity.BaseEntity;
 

@@ -1,11 +1,9 @@
-package entity.T01GringottsDatabase;
+package entity.T01Gringotts;
 
 import entity.BaseEntity;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
 @Table(name = "wizard_deposits")
